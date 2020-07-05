@@ -36,7 +36,7 @@ const App = {
 		console.log(oldValidator)
 		let calldata = this.contract.methods.changeValidatorsExecute(oldValidator).encodeABI();
 		console.log(calldata);
-		//await this.contract.methods.changeValidatorsExecute(oldValidator).send({value: 1000000000000000000, from: this.account, gas: 100000});
+		await this.contract.methods.changeValidatorsExecute(oldValidator).send({value: 1000000000000000000, from: this.account, gas: 100000});
 	},
 
 	getOld: function() {
