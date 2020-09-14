@@ -9,6 +9,8 @@ const venepi = "0x75F7863a48e33959130011981A1F602043BC4902";
 const venepiOld = "0x87f4afcd7be74ae20183c358ed0ae7b419068123";
 const iriana = "0x8c522178Cd6D80203C5Bce8faAa988bD7133eda2";
 const irianaOld = "0xe895b3912adb2dcab6ca1552795f92743d8373dd";
+const vischnu = "0x4437Eaee42F02D88aecD759807801ddF162d6570";
+const vischnuOld = "0xe576439f06dcaff4d29d150ad50345b91a981b8d";
 const guille = "0xf6bD003d07eBA2027C34fACE6af863Fd3f8B5a14";
 const guilleOld = "0x515234B2122a1fB51fCbE360d2379e35135B980a";
 
@@ -52,6 +54,8 @@ const App = {
 			old = irianaOld;
 		} else if (this.account == guille) {
 			old = guilleOld;
+		} else if (this.account == vischnu) {
+			old = vischnuOld;
 		}
 
 		return old;
